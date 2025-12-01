@@ -178,7 +178,7 @@ def delete_movie():
         # Delete the movie
         db.movies.delete_one({"_id": movie["_id"]})
         # Optional: Delete associated reviews to keep DB clean
-        db.reviews.delete_many({"movie_id": movie["_id"]})
+        db.reviews.delete_many({"movieId": movie["_id"]})
         print("Movie and associated reviews deleted.")
     else:
         print("Deletion cancelled.")
