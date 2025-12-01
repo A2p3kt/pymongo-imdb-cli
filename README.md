@@ -154,14 +154,6 @@ The application includes error handling for:
 - Out-of-range ratings (ensures 1-10 scale)
 - Database connection issues (handled by PyMongo)
 
-## Known Issue
-
-There's an inconsistency in the `delete_review()` function: it queries for `movie_id` (with underscore) but the reviews collection uses `movieId` (camelCase). This should be corrected to:
-
-```python
-reviews = list(db.reviews.find({"movieId": movie["_id"]}))
-```
-
 ## Code Organization
 
 The application follows a modular structure:
