@@ -6,7 +6,7 @@ This is a command-line interface (CLI) application for managing a movie database
 
 ## Technologies Used
 
-- **Python 3.x**
+- **Python 3**
 - **PyMongo**: MongoDB driver for Python
 - **python-dotenv**: For loading environment variables
 - **MongoDB Atlas**: Cloud-hosted MongoDB database
